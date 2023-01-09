@@ -46,7 +46,7 @@ main{
 }
 
 
-button{
+a{
     color: inherit;
     background-color: transparent;
     text-shadow: 3px 1px black;
@@ -55,13 +55,14 @@ button{
 
     font-family: inherit;
     font-size: 3rem;
+    text-align: center;
 
     transition: all 0.5s;
 
     cursor: pointer;
 }
 
-button:hover{
+a:hover{
     font-size: 4rem;
 
     color: coral; 
