@@ -47,16 +47,16 @@ class Snake{
 }
 
 class Apple{
-    constructor(canvasWidth, canvasHeight, snake){
+    constructor(canvasWidth, canvasHeight, snakeSize, snakeTail){
         let isTouching;
 
         while(true){
             isTouching = false;
-            this.x = Math.floor(Math.random() * canvasWidth / snake.size) * snake.size;
-            this.y = Math.floor(Math.random() * canvasHeight / snake.size) * snake.size;
+            this.x = Math.floor(Math.random() * canvasWidth / snakeSize) * snakeSize;
+            this.y = Math.floor(Math.random() * canvasHeight / snakeSize) * snakeSize;
         
-            for(let i = 0; i < snake.size; ++i){
-                if(this.x == snake.tail[i].x && this.y == snake.tail[i].y)isTouching = true;
+            for(let i = 0; i < snakeTail; ++i){
+                if(this.x == snakeTail[i].x && this.y == snakeTail[i].y)isTouching = true;
                 if(isTouching)break;
             }
             if(!isTouching)break;
