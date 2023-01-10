@@ -117,4 +117,14 @@ header.active .pause{
     height: 90%;
     
     background: linear-gradient(180deg, #96c93d, #00b09b);
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+#display{
+    border: 3px solid black;
 }
